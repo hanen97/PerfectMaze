@@ -1,0 +1,15 @@
+<div class="main-w3layouts wrapper">
+    <h1>Welcome to my maze </h1>
+    <div class="main-agileinfo">
+      <div class="agileits-top">
+        <form name="form"  >
+          <input  type="text" name="width"  [(ngModel)]="width" class="form-control sty1" placeholder="width" required="">
+          <input class="text" type="text" name="height"  [(ngModel)]="height" class="form-control" placeholder="height" required="">
+          <div class="handle" [ngClass]="{'hidden': hidden}">required field!</div>
+          <input (click)="checkRequiredFields()" type="submit" value="GO!" >
+          
+        </form>
+      </div>
+    </div>
+  
+  </div>
